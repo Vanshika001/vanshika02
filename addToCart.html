@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cart</title>
+    <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/addToCart.js" async></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light font-weight-bold">
+        <!-- <div class="container text-uppercase"> -->
+        <a class="navbar-brand" href="#">Abc</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item menu">
+                    <div class="dropdown">
+                        <a class="nav-link menu" href="#">Men</a>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="#">T-shirts</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Jeans</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link menu" href="#">Women</a>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="#">Tops</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Dresses</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link" href="#">Kids</a>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="#">T-shirts</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Dresses</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link " href="#">Beauty</a>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="#">Eyeliner</a></li>
+                                <li><a href="#">lipstick</a></li>
+                                <li><a href="#">kajal</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+            <i class="fas fa-user icon"></i>
+            <i class="far fa-heart"></i>
+            <i class="fad fa-shopping-cart icon"></i>
+    </nav>
+
+    <div class="latest-container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 ">
+                <!-- box--->
+                <div class="latest-box">
+                    <!-- image--->
+                    <div class="latest-img">
+                        <img class="shop-item-image" data-src="images/F1.jfif" alt="1">
+                        <div class="latest-overlay">
+                            <button class="shop-item-button" type="button">Buy Now</button>
+                        </div>
+                    </div>
+                    <!-- Detail-box -->
+                    <div class="latest-details">
+                        <!-- type -->
+                        <div class="latest-type">
+                            <a href="productDetails.html" class="shop-item-title">Red top</a>
+                            <span>H&M</span>
+                        </div>
+                        <!-- price -->
+                        <div class="latest-price shop-item-price">$25.89</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 column">
+                <!-- box--->
+                <div class="latest-box">
+                    <!-- image--->
+                    <div class="latest-img">
+                        <img class="shop-item-image" data-src="images/F2.jfif" alt="2">
+                        <div class="latest-overlay">
+                            <button class="shop-item-button" type="submit">Buy Now</button>
+                            <!-- <a href="addToCart.html" class="buy-btn shop-item-button">Buy Now</a> -->
+                        </div>
+                    </div>
+                    <!-- Detail-box -->
+                    <div class="latest-details">
+                        <!-- type -->
+                        <div class="latest-type">
+                            <a href="productDetails.html" class="shop-item-title">Purple top</a>
+                            <span>H&M</span>
+                        </div>
+                        <!-- price -->
+                        <div class="latest-price shop-item-price">$20.65</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 column">
+                <!-- box--->
+                <div class="latest-box">
+                    <!-- image--->
+                    <div class="latest-img">
+                        <img class="shop-item-image" data-src="images/F3.jfif" alt="3">
+                        <div class="latest-overlay">
+                            <button class="shop-item-button" type="submit">Buy Now</button>
+                            <!-- <a href="addToCart.html" class="buy-btn shop-item-button">Buy Now</a> -->
+                        </div>
+                    </div>
+                    <!-- Detail-box -->
+                    <div class="latest-details">
+                        <!-- type -->
+                        <div class="latest-type">
+                            <a href="productDetails.html" class="shop-item-title">White Top</a>
+                            <span>H&M</span>
+                        </div>
+                        <!-- price -->
+                        <div class="latest-price shop-item-price">$42.90</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 column">
+                <!-- box--->
+                <div class="latest-box">
+                    <!-- image--->
+                    <div class="latest-img">
+                        <img class="shop-item-image" data-src="images/F4.jfif" alt="4">
+                        <div class="latest-overlay">
+                            <button class="shop-item-button" type="submit">Buy Now</button>
+                            <!-- <a href="addToCart.html" class="buy-btn shop-item-button">Buy Now</a> -->
+                        </div>
+                    </div>
+                    <!-- Detail-box -->
+                    <div class="latest-details">
+                        <!-- type -->
+                        <div class="latest-type">
+                            <a href="productDetails.html" class="shop-item-title">White Shirt</a>
+                            <span>H&M</span>
+                        </div>
+                        <!-- price -->
+                        <div class="latest-price shop-item-price">$30.89</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Cart Section -->
+
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary purchase-button" type="button">PURCHASE</button>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-container">
+            <div class="section aboutus">
+                <h2>About Us</h2>
+                <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                    impression.
+                    Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur
+                    anonyme
+                    assembla
+                    ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.</p>
+                <ul class="section-icon">
+                    <li><a href="#"><i class="fab fa-facebook-f icon"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram icon"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube icon"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter icon"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quickLinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <span>647 Linda Street <br>
+                            Phoenixville, PA 19460 <br> USA</span>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-alt"></i></span>
+                        <p><a href="tel:12345678900">+1 234 567 8900</a><br>
+                            <a href="tel:12345678900">+1 234 567 8900</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <p><a href="mailto:vanshikaraman3@gmail.com">knowmore@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
